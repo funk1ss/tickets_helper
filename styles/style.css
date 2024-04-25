@@ -21,6 +21,7 @@ body{
     background-color: rgb(10, 12, 26);
     color: whitesmoke;
 }
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
