@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/lightbox.css">
+</head>
+<body class="bg-gray-200">
+    <div class="bg-gray-500">
+        <div class="container mx-auto flex justify-center">
+            <div class="p-2 flex flex-col items-center" onclick="hamburger()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                
+                <div class="tickets-list rounded-md w-40 text-center bg-gray-500 hidden" id="tickets-list">
+                    <div class="p-2 rounded-md cursor-pointer" onclick="render_ticket(1)">Билет 1</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto flex justify-center flex-col hidden" id="tasks_container">
+        <div class="task-1 border-2 border-cyan-500 mt-16 p-2 rounded-md">
+            <h2 class="big-text">Вопрос 1</h2>
+            <p id="question_1">text</p>
+            <h2 class="big-text">Ответ:</h2>
+            <p id="answer_1">text</p>
+        </div>
+
+        <div class="task-1 border-2 border-cyan-500 mt-16 p-2 rounded-md">
+            <h2 class="big-text">Вопрос 2</h2>
+            <p id="question_2">text</p>
+            <h2 class="big-text">Ответ:</h2>
+            <p id="answer_2">text</p>
+        </div>
+
+        <div class="task-1 border-2 border-cyan-500 mt-16 p-2 rounded-md">
+            <h2 class="big-text">Задача 3</h2>
+            <p id="question_3">text</p>
+            <h2 class="big-text">Ответ:</h2>
+            <div class="flex justify-center flex-wrap">
+                <div class="flex justify-center border-2 border-cyan-500 rounded-md">
+                    
+                    <a href="img/image_1.jpeg" data-lightbox="image-1" data-title="My caption" id="link_image">
+                        <img src="" alt="" id="answer_img">
+                    </a>
+                    
+
+                    
+                </div>
+                <div class="text-xs sm:text-lg">
+                    <pre class="code-table rounded-md"><code id="code_3">text</code></pre>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+
+    </div>
+    <script src="./scripts/lightbox-plus-jquery.js"></script>
+    <script src="./scripts/config.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

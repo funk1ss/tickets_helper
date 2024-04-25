@@ -1,0 +1,31 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.tickets-list{
+    position: absolute;
+    top: 65px;
+    animation: fadeInAnimation ease 1s;
+}
+.tasks_container{
+    animation: fadeInAnimation ease 1s;
+}
+.big-text{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.code-table{
+    background-color: rgb(10, 12, 26);
+    color: whitesmoke;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
