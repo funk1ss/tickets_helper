@@ -30,3 +30,9 @@ body{
         opacity: 1;
     }
 }
+.checked{
+    background: #61c6d7;
+}
+.started{
+    background: rgb(165, 140, 235);
+}
