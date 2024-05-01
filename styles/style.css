@@ -8,6 +8,11 @@ body{
     top: 65px;
     animation: fadeInAnimation ease 1s;
 }
+.confirmed-svg{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
 .tasks_container{
     animation: fadeInAnimation ease 1s;
 }

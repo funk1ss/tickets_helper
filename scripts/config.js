@@ -141,7 +141,7 @@ const tasks = {
         тактовой кнопки и светодиода. Написать программный код для работы схемы. При нажатии
         кнопки, светодиод выключается.`,
         image: "./img/4/4.3.1.jpeg",
-        code: `4.3
+        code: `
         #define Button 2 
         #define led 10
         
@@ -183,7 +183,8 @@ const tasks = {
         При вращении ручки резистора переменного сопротивления, изменяется яркость свечения
         светодиода.`,
         image: "./img/5/5.3.1.jpeg",
-        code: `const int potPin = A0;  
+        code: `
+        const int potPin = A0;  
         const int ledPin = 10;
         
         void setup() {
@@ -191,9 +192,9 @@ const tasks = {
         }
         
         void loop() {
-          int potValue = analogRead(potPin);  // Считываем значение сопротивления с резистора
-          int brightness = map(potValue, 0, 1023, 0, 255); // Преобразуем значение в диапазон яркости (0-255)
-          analogWrite(ledPin, brightness);  // Устанавливаем яркость светодиода
+          int potValue = analogRead(potPin);  
+          int brightness = map(potValue, 0, 1023, 0, 255); 
+          analogWrite(ledPin, brightness);  
         }`
     }
 },
